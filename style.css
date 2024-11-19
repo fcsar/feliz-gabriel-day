@@ -1,0 +1,59 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  .container {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  h1 {
+    font-size: 2.5em;
+  }
+  
+  .gift-box {
+    margin: 20px 0;
+  }
+  
+  .gift {
+    width: 150px;
+    cursor: pointer;
+    transition: transform 0.3s;
+  }
+  
+  .gift:hover {
+    transform: scale(1.1);
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  #surprise-message {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    animation: pop-up 0.5s ease-in-out;
+  }
+  
+  @keyframes pop-up {
+    0% {
+      transform: scale(0.8);
+      opacity: 0;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  
